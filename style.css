@@ -1,0 +1,95 @@
+*{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body{
+  font-family: 'Arial', Serif;
+  background: #eee;
+  overflow-x: hidden;
+}
+
+.navbar{
+  background: #3b5998;
+  overflow: hidden;
+  height: 63px;
+}
+
+.navbar a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover{
+  background: #ddd;
+  color: #000;
+}
+
+.navbar ul{
+  margin-top: 8px;
+}
+
+svg{
+  padding: 2px;
+}
+
+.side-nav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #111;
+  opacity: .9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.side-nav a{
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: lightgrey;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover{
+  color: white;
+}
+
+.side-nav .btn-close{
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main{
+  transition: margin-left 0.5s;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media(max-width: 560px){
+  .navbar-nav{
+    display: none;
+  }
+}
+
+@media(min-width: 561px){
+  .open-slide{
+    display: none;
+  }
+}

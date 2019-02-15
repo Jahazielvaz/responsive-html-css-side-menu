@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive HTML/CSS Side Menu</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+            <path d="M0, 5 30 5" stroke="#fff" stroke-width="5"/>
+            <path d="M0, 15 30 15 " stroke="#fff" stroke-width="5" />
+            <path d="M0, 25 30 25" stroke="#fff" stroke-width="5" />
+          </svg>
+        </a>
+      </span>
+
+      <ul class="navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Our Work</a></li>
+      </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Our Work</a>
+    </div>
+
+    <div id="main">
+      <h1>Responsive Side Menu</h1>
+    </div>
+
+    <script>
+      let openSlideMenu = ()=> {
+        document.getElementById('side-menu').style.width="250px";
+        document.getElementById('main').style.marginLeft="250px";
+      }
+
+      let closeSlideMenu = ()=> {
+        document.getElementById('side-menu').style.width="0px";
+        document.getElementById('main').style.marginLeft="0px";
+      }
+    </script>
+  </body>
+</html>
